@@ -1,0 +1,265 @@
+:root {
+    font-size: 1vw;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    transition: 500ms;
+}
+
+main img { max-width: 100%;}
+hr {color: rgba(242, 242, 242, 0.2);}
+body {
+    margin: 0;
+    background-color: rgb(250, 250, 250);
+}
+
+.relative {position: relative;}
+.top-space {margin-top: 50px;}
+.title {font-size: 1vw;}
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 5px;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+
+.logo-text {
+    padding: 10px 20px;
+    margin: 20px 10px;
+    font-family: sans-serif;
+}
+
+.menu {
+    list-style: none;
+    padding:10px 15px;
+}
+
+.menu li {
+    float: left;
+    padding:0 10px;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: 75%;
+    z-index: 1;
+}
+
+.main-slider {
+    width: 100%;
+    position: relative;
+}
+
+.slider-text {
+    position:absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 2.5vw;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.transparent-background {
+    padding: 10px 10px;
+    margin: -10px 0px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+}
+
+.image-collection {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0;
+}
+
+.image-collection-item {
+    width: 23%;
+    margin: 10px 0px;
+    float: left;
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 5px 30px;
+}
+
+.paragraph {
+    font-family: fantasy;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-size:0.8vw;
+    margin:0 0 40px 0;
+}
+
+.employee-card-collection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.employee-card {
+    width: 23%;
+    float: left;
+}
+
+.employee-card img {
+    filter: grayscale(70%);
+}
+
+.employee-card > h6 {
+    font-weight: 100;
+    color: gray;
+}
+
+.employee-card{
+    font-size: 0.9vw;
+}
+
+.contact-button {
+    display: block;
+    text-align:center;
+    padding:10px 0;
+    background-color: rgb(232, 232, 232);
+    border: none;
+    font-size:0.9vw;
+}
+
+.send-button {
+    background-color: black;
+    color: white;
+    padding:10px 25px;
+    border: none;
+    font-size: 0.7vw;
+}
+
+.footer {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    box-shadow:0 -0px 15px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.7vw;
+}
+
+.footer > a {
+    color: black;
+    text-decoration: none;
+}
+.textbox {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 15px 0;
+    border:1px solid rgb(202, 202, 202);
+}
+
+/*PSEUDO-CLASS & PSEUDO-ELEMENTS*/
+.image-collection-item:hover {
+    filter: brightness(1.3);
+}
+
+.employee-card:hover{
+    transform: scale(1.05);
+}
+
+.employee-card:hover img {
+    filter: grayscale(0%);
+}
+
+.footer:hover a{
+    color: lightgray;
+}
+
+.hover-background:hover {
+    background-color: lightgray;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+    background-color: lightgray;
+}
+
+.textbox:focus {
+    border: 1px solid #000;
+}
+
+.send-button:hover {
+    background-color: lightgray;
+    color: black;
+}
+/*PSEUDO-CLASS & PSEUDO-ELEMENTS END*/
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1024px) {
+    .slider-text {font-size: 2.5vw;}
+    .paragraph {font-size: 1.5vw;}
+    .employee-card {font-size: 1.5vw;}
+    .contact-button {font-size: 1.2vw;}
+    .send-button {font-size: 1.2vw;}
+    .title {font-size: 2vw;}
+    .top-header {font-size: 1.5vw;}
+    .footer {font-size: 1.50vw;}
+}
+
+@media screen and (max-width: 800px) {
+    .image-collection-item {width: 47%;}
+    .employee-card {width: 47%;}
+    .image-text {font-size: 2vw;}
+    .employee-card {font-size: 2.5vw;}
+    .contact-button {font-size: 2vw;}
+    .send-button {font-size: 2vw;}
+    .paragraph {font-size: 2vw;}
+    .title {font-size: 3vw;}
+    .footer {font-size: 2vw;}
+}
+
+@media screen and (max-width: 600px) {
+    .paragraph {font-size: 2.8vw;}
+    .title {font-size: 3vw;}
+    .image-text {font-size: 2.5vw;}
+    .menu a[class ^= "link"] {display: none;}
+    .hidden {display: block;}
+    .logo-text{font-size: 3vw;}
+    .main-content {width: 97%;}
+    .contact-button {font-size: 3vw;}
+    .send-button {font-size: 2.5vw;}
+    .image-collection-item {width: 100%;}
+    .footer {font-size: 3vw;}
+    
+    .employee-card {
+        width: 100%;
+        font-size: 3.5vw;
+    }
+    
+    .slider-text {
+        font-size: 3vw;
+        top: 50%;
+        left: 35%;
+    }
+}
+/*MEDIA QUERIES END*/
