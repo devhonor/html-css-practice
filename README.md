@@ -8,4 +8,4 @@ Most of them, no. The aim in this project is practicing mine HTML5 & CSS3 skills
 In these projects, I try fully responsive design.
 
 ## Projects
-* [BR Architects](http://github.com)
+* [BR Architects Live Preview](http://gelistiricionur.com/html-css-practice/br/)
