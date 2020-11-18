@@ -8,6 +8,6 @@ Most of them, no. The aim in this project is practicing **pure** HTML5 & CSS3 sk
 In these projects, I use full responsive design concept.
 
 ## Projects
-* Rental Apartment(In Progress)
+* Rental Apartment
 	* [Live Preview](http://gelistiricionur.com/html-css-practice/apartment-rental)
 	* [Project Folder](https://github.com/devhonor/html-css-pratice/tree/master/apartment-rental)
