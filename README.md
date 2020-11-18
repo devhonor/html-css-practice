@@ -9,5 +9,5 @@ In these projects, I use full responsive design concept.
 
 ## Projects
 * Rental Apartment(In Progress)
-	* [Live Preview](#)
+	* [Live Preview](http://gelistiricionur.com/html-css-practice/apartment-rental)
 	* [Project Folder](#)
