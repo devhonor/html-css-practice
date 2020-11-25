@@ -1,0 +1,251 @@
+:root {
+    font-size: 1vw; /*required for responsive text all over the website*/
+    --small-text-font-family: sans;
+    --second-theme-color: #008000; /*main colors are black and white so no need to define them.*/
+} 
+
+body {margin: 0 0;}
+.top-space {margin-top: 3.5rem}
+p{font-family: var(--small-text-font-family);}
+.s-text {font-size: 0.5vw;}
+.sm-text {font-size: 0.8vw;}
+
+img {
+    max-width: 100%; /*required for responsive images all over the website*/
+    border-radius: 5px;
+} 
+
+.link {
+    color: var(--second-theme-color);
+    text-decoration: none;;
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.master-header {
+    width: 100%!important;
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+.text-logo {margin: 0 0;}
+.fa-bars, .fa-envelope {font-size: 1.2vw;}
+
+.master-main {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.quarter-card-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quarter-card {flex-basis: 23.5%;}
+div.quarter-card-collection + div.quarter-card-collection {margin-top: 4rem;}
+
+.pagination {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-list {list-style: none;}
+
+.pagination-list > li {
+    float: left;
+    padding: 0.7rem 1rem;
+}
+
+.fa-backward, .fa-forward {
+    font-size: 0.5vw;
+    vertical-align: middle;
+}
+
+.active-element {
+    background-color: var(--second-theme-color)!important;
+    color: #fff!important;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.master-footer {background-color: rgb(248, 248, 248);}
+.master-footer .link {text-decoration: underline;}
+.trio-card-collection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trio-card {flex-basis: 24%;}
+
+.tag-collection {
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+}
+
+.tag-collection > li {
+    float: left;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.5vw;
+    background-color: #808080;
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.image-overlay-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    background-color: var(--second-theme-color);
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.overlay-text {
+    background-color: #d3d3d3;
+    color: gray;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1px;
+}
+
+.tooltip-container {position: relative;}
+
+.tooltip {
+    top: -2px;
+    left: -450%;
+    position: absolute;
+    display: inline-block;
+    background-color: #000;
+    opacity:0.8;
+    padding: 0.2rem;
+    color: #d3d3d3;
+    visibility: hidden;
+}
+
+
+/*PSEUDO-CLASSES/ELEMENTS*/
+.pagination-list > li:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.quarter-card:hover h2{color: var(--second-theme-color);}
+.quarter-card:hover {
+    transform: scale(1.03);
+    transition: transform .5s;
+}
+
+.overlay-text:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.quarter-card:hover .overlay {
+    bottom: 0%;
+    transition: bottom .3s ease-in;
+    visibility: visible;
+}
+
+footer i:hover {
+    color: var(--second-theme-color);
+    cursor: pointer;
+}
+
+.tooltip-container:hover .tooltip {visibility: visible;}
+.link:hover {color: #000;}
+/*PSEUDO-CLASSES/ELEMENTS END*/
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1200px) {
+    :root {font-size: 1.3vw;}
+    .s-text {font-size: 0.8vw;}
+    .sm-text {font-size: 1vw;}
+    .tag-collection > li {font-size: 0.8vw;}
+    .fa-bars, .fa-envelope {font-size: 1.5vw;}
+    .container {width: 85%;}
+}
+
+@media only screen and (max-width: 1024px) {
+    :root {font-size: 1.5vw;}
+    .s-text {font-size: 1vw;}
+    .sm-text {font-size: 1.2vw;}
+    .tag-collection > li {font-size: 1vw;}
+    .fa-bars, .fa-envelope {font-size: 1.8vw;}
+    .container {width: 95%;}
+}
+
+@media only screen and (max-width: 900px) {
+    :root {font-size: 1.6vw;}
+    .s-text {font-size: 1.2vw;}
+    .sm-text {font-size: 1.5vw;}
+    .tag-collection > li {font-size: 1.1vw;}
+    .container {width: 98%;}
+}
+
+@media only screen and (max-width: 768px) {
+    :root {font-size: 1.8vw;}
+    .s-text {font-size: 1.4vw;}
+    .sm-text {font-size: 1.6vw;}
+    .tag-collection > li {font-size: 1.2vw;}
+}
+
+@media only screen and (max-width: 600px) {
+    :root {font-size: 1.9vw;}
+    .s-text {font-size: 1.5vw;}
+    .sm-text {font-size: 1.7vw;}
+    .tag-collection > li {font-size: 1.4vw;}
+    .fa-bars, .fa-envelope {font-size: 2.5vw;}
+    .master-footer i {font-size: 2.5vw;}
+    .quarter-card {flex-basis: 48.5%;}
+}
+
+@media only screen and (max-width: 480px) {
+    :root {font-size: 2.5vw;}
+    .s-text {font-size: 2vw;}
+    .sm-text {font-size: 2.2vw;}
+    .tag-collection > li {font-size: 2vw;}
+    .fa-bars, .fa-envelope {font-size: 3.5vw;}
+    .master-footer i {font-size: 3vw;}
+    .trio-card { flex-basis: 31%;}
+}
+
+@media only screen and (max-width: 320px) {
+    :root {font-size: 3.5vw;}
+    .s-text {font-size: 3vw;}
+    .sm-text {font-size: 3vw;}
+    .tag-collection > li {font-size: 3vw;}
+    .fa-bars, .fa-envelope {font-size: 6vw;}
+    .master-footer i {font-size: 5vw;}
+    .quarter-card {flex-basis: 98%;}
+}
+/*MEDIA QUERIES END*/

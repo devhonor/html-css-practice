@@ -10,4 +10,8 @@ In these projects, I use full responsive design concept.
 ## Projects
 * Rental Apartment
 	* [Live Preview](http://gelistiricionur.com/html-css-practice/apartment-rental)
-	* [Project Folder](https://github.com/devhonor/html-css-pratice/tree/master/apartment-rental)
+	* [Project Folder](https://github.com/devhonor/html-css-practice/tree/master/apartment-rental)
+
+* Food Chef
+	* [Live Preview](http://gelistiricionur.com/html-css-practice/food-chef)
+	* [Project Folder](https://github.com/devhonor/html-css-practice/tree/master/food-chef)
